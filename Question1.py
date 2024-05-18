@@ -2,6 +2,8 @@
     This code generates the random numbers which are uniformly distributed in the
     range [0,1] using linear congruential generator method. Then it plots the 
     histogram of the sample and compares with the PDF of the uniform distribution.
+
+    Additionally it also calculates the time to generate the uniformly distributed sample.
 """
 
 import numpy as np
