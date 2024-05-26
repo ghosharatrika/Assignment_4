@@ -102,6 +102,9 @@ plt.errorbar(x, y, yerr=sigma, fmt=".k", capsize=0)
 for theta in flat_samples[np.random.randint(len(flat_samples), size=200)]:
     plt.plot(x_fit, model(theta, x_fit), color="gray", alpha=0.1)
 
+plt.xlabel("x_fit")
+plt.ylabel("y_fit")
+plt.title("Best fit along with  200 models randomly chosen from the posterior")
 plt.plot(x_fit, model(best_fit, x_fit), label="Best fit", color='red')
 plt.legend()
 plt.show()
